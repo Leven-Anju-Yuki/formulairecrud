@@ -27,7 +27,13 @@ include_once '../controleur/modifier.php';
             <label>Email</label>
             <input type="email" name="email" value="<?php echo $user['email'] ?>">
             <label>Mot de passe</label>
-            <input type="password" name="password" value="<?php echo $user['password'] ?>">
+            <input type="text" name="password" value="
+            <?php
+            $password = password_verify();
+            echo $user['password'];
+            $password = password_hash($password, PASSWORD_DEFAULT);
+            ?>
+            ">
             <input type="submit" value="Modifier" name="button">
         </form>
     </div>

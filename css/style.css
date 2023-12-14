@@ -21,7 +21,7 @@
 
 .accueil,
 .bonjour,
-.liste {
+.liste,.admin {
   background: linear-gradient(rgba(246, 212, 149, 0.457), black), url("../images/fonds-ecran-lapin-15-660x330.jpg");
   background-attachment: fixed;
   background-size: cover;

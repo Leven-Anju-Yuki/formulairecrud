@@ -26,7 +26,7 @@ if (!isset($_COOKIE["auth_token"])) {
     <title>Document</title>
 </head>
 
-<body>
+<body class="admin">
     <nav>
         <ul>
             <a href="../vue/userliste.php" class="boutton">voir les utilisateurs</a><br>
